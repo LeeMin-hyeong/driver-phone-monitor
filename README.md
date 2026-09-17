@@ -1,6 +1,10 @@
 # 운전자 휴대폰 소지 분류
 
+손별 ResNet 데이터 준비: `.\.gpu\Scripts\python.exe hand_labeler.py`로 224×224 ROI 선택·라벨링 도구를 실행합니다. [사용 방법](docs/HAND_LABELER.md)
+
 ## 640 입력 실시간 모델
+
+현재 실시간 판정은 1차 점수가 0.25 미만이면 `S1 + 0.5 × 0.25 × S2 ≥ 0.25`일 때 PHONE입니다. ResNet의 최대 기여도는 0.125이며, 반영 계수는 `configs/realtime_model.json`의 `stage2_weight`로 조정합니다. 1차 양성은 그대로 유지합니다. 아래 사진 평가 수치는 이전 판정 방식의 결과이며, 변경한 방식의 정확도와 실시간 성능은 재평가가 필요합니다.
 
 ### OpenCV 웹캠·영상 시각화
 

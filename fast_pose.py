@@ -12,7 +12,7 @@ from fast_forest import BatchOneForest
 
 
 class FastPose:
-    def __init__(self,model_path=None,half=False,vectorized=True,engine=False,wrist_checkpoint=None,wrist_threshold=.85):
+    def __init__(self,model_path=None,half=False,vectorized=True,engine=False,wrist_checkpoint=None,wrist_threshold=.85,wrist_weight=None):
         self.half=half
         self.bundle=joblib.load(model_path or ROOT/'artifacts/fast_pose_model/model.joblib')
         self.classifier=BatchOneForest(self.bundle['model']) if vectorized else self.bundle['model']
@@ -21,6 +21,9 @@ class FastPose:
         self.pose=YOLO(str(ROOT/'models'/('yolo26n-pose'+suffix)),task='pose')
         self.wrist_model=None
         self.wrist_threshold=wrist_threshold
+        self.wrist_weight=wrist_weight
+        if wrist_weight is not None and not 0 <= wrist_weight <= 1:
+            raise ValueError('wrist_weight must be between 0 and 1')
         if wrist_checkpoint:
             from cascade import new_model,PREPROCESS
             state=torch.load(wrist_checkpoint,map_location='cpu',weights_only=True)
@@ -58,7 +61,12 @@ class FastPose:
             crop=wrist_image(Image.fromarray(rgb),keypoints.tolist(),info.get('driver_index'))
             x=self.wrist_preprocess(crop).unsqueeze(0).cuda()
             image_score=float(self.wrist_model(x).softmax(1)[0,1])
-            result.update(score=image_score,prediction=int(image_score>=self.wrist_threshold),stage_used=2,stage2_score=image_score)
+            if self.wrist_weight is None:
+                score,threshold=image_score,self.wrist_threshold
+            else:
+                threshold=self.bundle['threshold']
+                score=s+self.wrist_weight*threshold*image_score
+            result.update(score=score,prediction=int(score>=threshold),stage_used=2,stage2_score=image_score)
         if visualize:
             result['visualization']=dict(boxes=boxes,keypoints=keypoints.tolist(),
                                          driver_index=info.get('driver_index'),roi=roi)

@@ -25,7 +25,8 @@ def load_engine(config):
         if hashlib.sha256(path.read_bytes()).hexdigest()!=digest:
             raise ValueError('Model hash mismatch: '+relative)
     engine=FastPose(ROOT/config['stage1_model'],half=True,vectorized=True,engine=True,
-                    wrist_checkpoint=ROOT/config['stage2_model'],wrist_threshold=config['stage2_threshold'])
+                    wrist_checkpoint=ROOT/config['stage2_model'],wrist_threshold=config.get('stage2_threshold',.85),
+                    wrist_weight=config.get('stage2_weight'))
     engine.bundle['threshold']=config['stage1_threshold']
     return engine
 
