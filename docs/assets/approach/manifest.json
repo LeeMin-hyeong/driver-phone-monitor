@@ -1,0 +1,55 @@
+{
+  "model_sha256": "027f3ebc3fd2c8250182c32e1f24507f25533d9ba647636738fe0c06b5073f35",
+  "evaluation": "artifacts/retrain_20260916_v2/verified/predictions.csv",
+  "size": [
+    1920,
+    1080
+  ],
+  "assets": [
+    {
+      "asset": "01_positive.png",
+      "source": "dataset\\test\\phone\\IMG_7564.jpg의 사본.jpg",
+      "sha256": "1289775084b85231323bf4199cc1b503f0c2c1c0fb8a20df0def2f1380462157",
+      "target": 1,
+      "prediction": "positive",
+      "stage": 1,
+      "score": 0.9990730699715982,
+      "threshold": 0.3,
+      "reason": "landmark_classifier",
+      "driver_index": 0,
+      "observation": "artifacts\\retrain_20260916_v2\\verified\\cache\\1289775084b85231323bf4199cc1b503f0c2c1c0fb8a20df0def2f1380462157.json"
+    },
+    {
+      "asset": "02_negative.png",
+      "source": "dataset\\test\\normal\\IMG_7441.jpg의 사본.jpg",
+      "sha256": "51b590ea56514d850edd353fbebcf64026176a5c17d282375a5c52d08d43f868",
+      "target": 0,
+      "prediction": "negative",
+      "stage": 1,
+      "score": 0.23503572174743287,
+      "threshold": 0.3,
+      "reason": "landmark_classifier",
+      "driver_index": 0,
+      "observation": "artifacts\\retrain_20260916_v2\\verified\\cache\\51b590ea56514d850edd353fbebcf64026176a5c17d282375a5c52d08d43f868.json"
+    },
+    {
+      "asset": "03_resnet_fallback.png",
+      "source": "dataset\\test\\phone\\IMG_7504.jpg의 사본.jpg",
+      "sha256": "1715ad1280bd3d659fbb9d0b2c1929b59d067d2651c1d304b42253c6aaff3986",
+      "target": 1,
+      "prediction": "positive",
+      "stage": 2,
+      "score": 0.9823697805404663,
+      "threshold": 0.5,
+      "reason": "driver_pose_missing",
+      "driver_index": null,
+      "observation": "artifacts\\retrain_20260916_v2\\verified\\cache\\1715ad1280bd3d659fbb9d0b2c1929b59d067d2651c1d304b42253c6aaff3986.json"
+    }
+  ],
+  "notes": [
+    "Actual saved evaluation scores; no fresh inference or synthetic photo content.",
+    "Pose edges require both endpoint visibility/presence >= 0.4; all raw phone boxes shown.",
+    "Other detected poses are orange; driver pose green; independent driver person box cyan.",
+    "These are selected correctly classified examples, not aggregate performance evidence."
+  ]
+}

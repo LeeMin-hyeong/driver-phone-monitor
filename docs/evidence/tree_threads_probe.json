@@ -1,0 +1,17 @@
+{
+  "scope": "ExtraTrees predict_proba only; cached 640_prune features; batch1; five warmups per setting; randomized order; model not saved",
+  "n": 122,
+  "max_score_difference": 2.220446049250313e-16,
+  "results": {
+    "1": {
+      "mean_ms": 13.311567212947354,
+      "median_ms": 10.407799996755784,
+      "p95_ms": 32.13805000013961
+    },
+    "4": {
+      "mean_ms": 40.99095081989214,
+      "median_ms": 34.25895000327728,
+      "p95_ms": 85.33059000474154
+    }
+  }
+}

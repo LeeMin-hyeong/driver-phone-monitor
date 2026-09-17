@@ -1,0 +1,10 @@
+ultralytics>=8.4.0
+mediapipe>=0.10.30
+opencv-python>=4.10
+numpy>=1.26
+scikit-learn>=1.5
+joblib>=1.4
+Pillow>=10.0
+torch>=2.3
+torchvision>=0.18
+pi-heif>=1.4

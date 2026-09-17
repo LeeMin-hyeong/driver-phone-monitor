@@ -1,0 +1,12 @@
+{
+  "train_unchanged": true,
+  "test_same_hashes": true,
+  "test_label_changes": [
+    {
+      "old_path": "C:\\Users\\한국전파진흥협회\\git\\autoever\\driver_classification\\dataset\\test\\안들고있음\\IMG_7624.jpg의 사본.jpg",
+      "new_path": "C:\\Users\\한국전파진흥협회\\git\\autoever\\driver_classification\\dataset\\test\\들고있음\\IMG_7624.jpg의 사본.jpg",
+      "old_target": "0",
+      "new_target": "1"
+    }
+  ]
+}

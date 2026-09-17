@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+models/
+output/
+*.pt
+camera.json
+.runtime/
+.gpu/
+.cache/
+artifacts/
+contact_sheet.jpg
+dataset/
+new dataset/

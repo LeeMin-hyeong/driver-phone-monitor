@@ -1,0 +1,112 @@
+{
+  "dataset": {
+    "train": {
+      "total": 911,
+      "positive": 401,
+      "negative": 510,
+      "reused": 888,
+      "need_extract": 23
+    },
+    "test": {
+      "total": 146,
+      "positive": 77,
+      "negative": 69,
+      "reused": 140,
+      "need_extract": 6
+    }
+  },
+  "old_confirmed_on_current_test": {
+    "n": 146,
+    "accuracy": 0.8972602739726028,
+    "precision": 0.8690476190476191,
+    "recall": 0.948051948051948,
+    "f1": 0.906832298136646,
+    "confusion_matrix": [
+      [
+        58,
+        11
+      ],
+      [
+        4,
+        73
+      ]
+    ]
+  },
+  "retrained_cascade": {
+    "n": 146,
+    "accuracy": 0.8835616438356164,
+    "precision": 0.8571428571428571,
+    "recall": 0.935064935064935,
+    "f1": 0.8944099378881988,
+    "confusion_matrix": [
+      [
+        57,
+        12
+      ],
+      [
+        5,
+        72
+      ]
+    ]
+  },
+  "retrained_positive_fallback": {
+    "n": 146,
+    "accuracy": 0.8493150684931506,
+    "precision": 0.7835051546391752,
+    "recall": 0.987012987012987,
+    "f1": 0.8735632183908046,
+    "confusion_matrix": [
+      [
+        48,
+        21
+      ],
+      [
+        1,
+        76
+      ]
+    ]
+  },
+  "retrained_image_only": {
+    "n": 146,
+    "accuracy": 0.815068493150685,
+    "precision": 0.8787878787878788,
+    "recall": 0.7532467532467533,
+    "f1": 0.8111888111888111,
+    "confusion_matrix": [
+      [
+        61,
+        8
+      ],
+      [
+        19,
+        58
+      ]
+    ]
+  },
+  "fallback_only": {
+    "n": 22,
+    "accuracy": 0.7272727272727273,
+    "precision": 0.7777777777777778,
+    "recall": 0.6363636363636364,
+    "f1": 0.7,
+    "confusion_matrix": [
+      [
+        9,
+        2
+      ],
+      [
+        4,
+        7
+      ]
+    ]
+  },
+  "selected_epochs": 5,
+  "stage1_threshold": 0.3,
+  "stage2_threshold": 0.5,
+  "positive_fallback_threshold": 0.3,
+  "test_verified": true,
+  "dataset_unchanged_during_run": true,
+  "default_model_unchanged": true,
+  "new_bundle_sha256": "027f3ebc3fd2c8250182c32e1f24507f25533d9ba647636738fe0c06b5073f35",
+  "active_bundle_sha256": "246670996befb7499982a120c2a9f368f858b594f88e86062a19ea1e6354dff8"
+}

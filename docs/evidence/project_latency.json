@@ -1,0 +1,61 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch_version": "2.14.0+cu130",
+  "torch_cpu_threads": 4,
+  "model_sha256": "027f3ebc3fd2c8250182c32e1f24507f25533d9ba647636738fe0c06b5073f35",
+  "load_seconds": 5.718654299998889,
+  "warmup_seconds": 4.2840276999995694,
+  "warmup_images": 4,
+  "overall": {
+    "n": 30,
+    "mean_ms": 750.791030000255,
+    "median_ms": 733.8532000012492,
+    "p95_ms": 873.8798049998877,
+    "max_ms": 892.2685000034107,
+    "min_ms": 615.840800001024,
+    "serial_fps": 1.3319285394228277,
+    "under_33_33_ms": 0,
+    "component_mean_ms": {
+      "extract_ms": 635.4656633335253,
+      "yolo_ms": 258.2674433332916,
+      "pose_ms": 65.7840833334679,
+      "hands_ms": 129.57507000064652,
+      "decision_ms": 115.32536666672968
+    }
+  },
+  "stage1": {
+    "n": 24,
+    "mean_ms": 770.3859916670505,
+    "median_ms": 748.5189999988506,
+    "p95_ms": 874.709334999352,
+    "max_ms": 892.2685000034107,
+    "min_ms": 658.4632000012789,
+    "serial_fps": 1.2980506016679823,
+    "under_33_33_ms": 0,
+    "component_mean_ms": {
+      "extract_ms": 674.5842041668766,
+      "yolo_ms": 279.24910000001546,
+      "pose_ms": 68.66450416691805,
+      "hands_ms": 144.46434583427012,
+      "decision_ms": 95.80178750017392
+    }
+  },
+  "stage2": {
+    "n": 6,
+    "mean_ms": 672.4111833330729,
+    "median_ms": 682.0901499995671,
+    "p95_ms": 699.7132999995301,
+    "max_ms": 701.5291999996407,
+    "min_ms": 615.840800001024,
+    "serial_fps": 1.487185259238407,
+    "under_33_33_ms": 0,
+    "component_mean_ms": {
+      "extract_ms": 478.99150000012014,
+      "yolo_ms": 174.34081666639636,
+      "pose_ms": 54.262399999667345,
+      "hands_ms": 70.01796666615216,
+      "decision_ms": 193.41968333295276
+    }
+  },
+  "protocol": "30 test photos stratified by route (24 stage1, 6 stage2), seed42; serial batch1; resident models; no feature cache; original file read/decode included; CUDA synchronized; output rendering/writing and process imports excluded. Includes synchronization instrumentation overhead. Sample latency, not a hard deadline guarantee. Current main.py reloads models per image and will be slower."
+}

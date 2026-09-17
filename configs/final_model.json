@@ -1,0 +1,51 @@
+{
+  "status": "confirmed",
+  "confirmed_date": "2026-09-16",
+  "name": "driver_phone_cascade_v2_shared_dataset",
+  "feature_version": 4,
+  "extractor_version": 3,
+  "stage1": {
+    "type": "ExtraTrees",
+    "threshold": 0.3
+  },
+  "stage2": {
+    "type": "ImageNet ResNet18 fine-tuned on train",
+    "threshold": 0.5,
+    "image_size": 320,
+    "training_epochs": 5
+  },
+  "routing": "stage2 only when stage1 feature score is missing",
+  "outputs": [
+    "들고있음",
+    "안들고있음"
+  ],
+  "driver_side_default": "right",
+  "dataset_counts": {
+    "train": 911,
+    "train_positive": 401,
+    "train_negative": 510,
+    "test": 146,
+    "test_positive": 77,
+    "test_negative": 69
+  },
+  "training_internal_split": {
+    "fit": 619,
+    "validation": 292,
+    "group": "IMG number // 100",
+    "random_state": 42
+  },
+  "files": {
+    "artifacts/classifier.joblib": "027f3ebc3fd2c8250182c32e1f24507f25533d9ba647636738fe0c06b5073f35",
+    "artifacts/retrain_20260916_v2/model/classifier.joblib": "027f3ebc3fd2c8250182c32e1f24507f25533d9ba647636738fe0c06b5073f35",
+    "artifacts/retrain_20260916_v2/model/stage2.pt": "710785c93eff3839a51ed68b1d66dc3be8f28f160342b5043ef1f7767f154af6",
+    "models/yolo26m.pt": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+    "models/pose_landmarker_full.task": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1",
+    "models/hand_landmarker.task": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+  },
+  "metrics_evidence": "docs/evidence/retrain_20260916_v2.json",
+  "note": "This records the confirmed model; it is not an inference configuration override. The joblib bundle contains runtime settings.",
+  "dataset_counts_scope": "shared revised dataset snapshot",
+  "current_dataset_audit": "configs/dataset/protocol.json",
+  "selection_reason": "User decision: common training and test dataset across team methods",
+  "dataset_protocol": "configs/dataset/protocol.json"
+}

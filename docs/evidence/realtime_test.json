@@ -1,0 +1,380 @@
+{
+  "split": "test",
+  "metrics": {
+    "n": 146,
+    "accuracy": 0.9383561643835616,
+    "precision": 0.9047619047619048,
+    "recall": 0.987012987012987,
+    "f1": 0.9440993788819876,
+    "confusion_matrix": [
+      [
+        61,
+        8
+      ],
+      [
+        1,
+        76
+      ]
+    ]
+  },
+  "metrics_by_repeat": [
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    },
+    {
+      "n": 146,
+      "accuracy": 0.9383561643835616,
+      "precision": 0.9047619047619048,
+      "recall": 0.987012987012987,
+      "f1": 0.9440993788819876,
+      "confusion_matrix": [
+        [
+          61,
+          8
+        ],
+        [
+          1,
+          76
+        ]
+      ]
+    }
+  ],
+  "reference": {
+    "accuracy": 0.8835616438356164,
+    "precision": 0.8571428571428571,
+    "recall": 0.935064935064935,
+    "f1": 0.8944099378881988
+  },
+  "model_sha256": "6d9a5fbdd22b6e3855be7c1c049e431b7f4310a047d78b0024b62561dd3e3153",
+  "mean_ms": 22.63009170880592,
+  "p95_ms": 29.493475001072508,
+  "max_ms": 70.5415999982506,
+  "fps": 44.188950397000625,
+  "fraction_under_41_67_ms": 0.9960346070656092,
+  "decode_mean_ms": 3.2024061283526493,
+  "inference_mean_ms": 19.42768558045327,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "repeats": 19,
+  "measured_processing_seconds": 62.77587440022762,
+  "wall_seconds": 62.96040300000459,
+  "wall_fps": 44.05943843783525,
+  "min_rolling_1s_fps": 27,
+  "input640": true,
+  "half": true,
+  "vectorized": true,
+  "engine": true,
+  "fusion": true,
+  "wrist_sha256": "b03fb12881049ba8590d983e5538bf062c30a93d0071b03e011d91ab10346972",
+  "input_manifest_sha256": "41a46908e1f1a0982f5843014b00fb66dc48f9b97f02c530befc0173f2f93a32",
+  "engine_sha256": {
+    "yolo26m.engine": "81ca1f106b5045f4ce816f1c45acf57e0f4401db3291ca3277c87b0b3a23a023",
+    "yolo26n-pose.engine": "86b49fdea6081b329e9fb7c9663c8794b31cb51e67094eeb9fede3a0f64440e0"
+  },
+  "protocol": "Prepared 640x640 JPEG read/decode every call; upstream resize excluded under user-authorized 640 input assumption. One object and one pose prediction, CPU features and classifier. Resident models, batch1, CPU threads1, GPU synchronized, 8 warmups. No decoded-frame or feature cache. OS filesystem cache not flushed. Hash verification and result writes excluded.",
+  "quality_gate": true,
+  "latency_gate": true,
+  "goal_proven": true
+}

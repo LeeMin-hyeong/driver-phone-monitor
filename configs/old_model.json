@@ -1,0 +1,47 @@
+{
+  "status": "archived",
+  "confirmed_date": "2026-09-16",
+  "name": "driver_phone_cascade_v1_old",
+  "feature_version": 4,
+  "extractor_version": 3,
+  "stage1": {
+    "type": "ExtraTrees",
+    "threshold": 0.3
+  },
+  "stage2": {
+    "type": "ImageNet ResNet18 fine-tuned on train",
+    "threshold": 0.5,
+    "image_size": 320,
+    "training_epochs": 2
+  },
+  "routing": "stage2 only when stage1 feature score is missing",
+  "outputs": [
+    "들고있음",
+    "안들고있음"
+  ],
+  "driver_side_default": "right",
+  "dataset_counts": {
+    "train": 1011,
+    "train_positive": 381,
+    "train_negative": 630,
+    "test": 140,
+    "test_positive": 71,
+    "test_negative": 69
+  },
+  "training_internal_split": {
+    "fit": 731,
+    "validation": 280,
+    "group": "IMG number // 100",
+    "random_state": 42
+  },
+  "files": {
+    "artifacts/old/classifier.joblib": "8f7f395893894014dd8e44835d5474c1848f2f600c994823167099df6102314d",
+    "artifacts/old/original_classifier.joblib": "246670996befb7499982a120c2a9f368f858b594f88e86062a19ea1e6354dff8",
+    "artifacts/old/stage2.pt": "2b3c66e251161b652be1f5bd16e81f569a1d7483d9137ecf9622a0c18cacefd1"
+  },
+  "metrics_evidence": "docs/evidence/final_evaluation.json",
+  "note": "This records the confirmed model; it is not an inference configuration override. The joblib bundle contains runtime settings.",
+  "dataset_counts_scope": "confirmed experiment snapshot; current working dataset differs",
+  "current_dataset_audit": "docs/evidence/final_data_layout.json",
+  "archive_reason": "Use shared revised train/test split for team comparisons"
+}

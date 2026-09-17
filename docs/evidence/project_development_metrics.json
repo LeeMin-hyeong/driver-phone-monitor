@@ -1,0 +1,59 @@
+{
+  "scope": "Historical development evaluations; not the final shared test set",
+  "detector_comparison": {
+    "total_images": 639,
+    "scored_images": 637,
+    "yolo26n": {
+      "n": 637,
+      "accuracy": 0.7441130298273155,
+      "precision": 0.84,
+      "recall": 0.5618729096989966,
+      "f1": 0.6733466933867736,
+      "confusion_matrix": [
+        [
+          306,
+          32
+        ],
+        [
+          131,
+          168
+        ]
+      ]
+    },
+    "yolo26m": {
+      "n": 637,
+      "accuracy": 0.8445839874411303,
+      "precision": 0.9032258064516129,
+      "recall": 0.7491638795986622,
+      "f1": 0.8190127970749543,
+      "confusion_matrix": [
+        [
+          314,
+          24
+        ],
+        [
+          75,
+          224
+        ]
+      ]
+    }
+  },
+  "feature_comparison": {
+    "common_scored": 577,
+    "before": {
+      "n": 577,
+      "accuracy": 0.8526863084922011,
+      "precision": 0.9288888888888889,
+      "recall": 0.7517985611510791,
+      "f1": 0.831013916500994
+    },
+    "after": {
+      "n": 577,
+      "accuracy": 0.8873483535528596,
+      "precision": 0.941908713692946,
+      "recall": 0.8165467625899281,
+      "f1": 0.8747591522157996
+    },
+    "caveat": "Development re-evaluation after error-driven changes; classifier retrained only on original dataset with m features."
+  }
+}

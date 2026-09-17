@@ -1,0 +1,12 @@
+ultralytics==8.4.152
+mediapipe==1.0.1
+opencv-python==5.0.0.93
+numpy==2.5.3
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+Pillow==12.3.0
+# CUDA wheels require the matching PyTorch index; see docs/RUNBOOK.md.
+torch==2.14.0+cu130
+torchvision==0.29.0+cu130
+pi-heif==1.4.0

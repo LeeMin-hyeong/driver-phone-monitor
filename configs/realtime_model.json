@@ -1,0 +1,23 @@
+{
+  "status": "verified",
+  "name": "driver_phone_realtime640",
+  "input_shape": [
+    640,
+    640
+  ],
+  "driver_side": "right",
+  "cpu_threads": 1,
+  "stage1_model": "artifacts/fast_pose640_sensitive/model.joblib",
+  "stage2_model": "artifacts/fast_wrists_v1/model.pt",
+  "stage1_threshold": 0.24999999999999997,
+  "stage2_threshold": 0.8499999999999998,
+  "sha256": {
+    "artifacts/fast_pose640_sensitive/model.joblib": "6d9a5fbdd22b6e3855be7c1c049e431b7f4310a047d78b0024b62561dd3e3153",
+    "artifacts/fast_wrists_v1/model.pt": "b03fb12881049ba8590d983e5538bf062c30a93d0071b03e011d91ab10346972",
+    "models/yolo26m.engine": "81ca1f106b5045f4ce816f1c45acf57e0f4401db3291ca3277c87b0b3a23a023",
+    "models/yolo26n-pose.engine": "86b49fdea6081b329e9fb7c9663c8794b31cb51e67094eeb9fede3a0f64440e0"
+  },
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "evidence": "docs/evidence/realtime_test.json",
+  "note": "640x640 input, resident models, batch1; stages are newly trained on the shared 911-image train split. Legacy main.py remains available."
+}

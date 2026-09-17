@@ -1,0 +1,138 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "model_sha256": "027f3ebc3fd2c8250182c32e1f24507f25533d9ba647636738fe0c06b5073f35",
+  "protocol": "Frozen model and thresholds; all 146 test photos; random variant order per image; 4 warmups per variant; no cache; resident models; synchronized GPU; excludes cache/output writes. No retraining. Pruning rule fixed before evaluation.",
+  "resize": "Only initial YOLO call: imgsz=640, rect=False (aspect-preserving square letterbox); MediaPipe and crop inputs unchanged.",
+  "pruning": "Skip wrist YOLO if initial nearest-phone confidence >= .5, distance <= .25 shoulder widths, competitor distance margin >= .1; keep all hand inference.",
+  "variants": {
+    "baseline": {
+      "n": 146,
+      "tp": 72,
+      "tn": 57,
+      "fp": 12,
+      "fn": 5,
+      "accuracy": 0.8835616438356164,
+      "precision": 0.8571428571428571,
+      "recall": 0.935064935064935,
+      "f1": 0.8944099378881988,
+      "means": {
+        "total_ms": 398.1835150684861,
+        "extract_ms": 333.8154130140363,
+        "decision_ms": 64.36810205444974,
+        "full_yolo_ms": 74.73058424641263,
+        "crop_yolo_ms": 35.51638082239126,
+        "yolo_calls": 2.664383561643836
+      },
+      "fps": 2.5114048225427004,
+      "p95_ms": 759.3354750006256,
+      "yolo_calls": 389,
+      "skipped_calls": 0,
+      "stage2_count": 22
+    },
+    "640": {
+      "n": 146,
+      "tp": 74,
+      "tn": 54,
+      "fp": 15,
+      "fn": 3,
+      "accuracy": 0.8767123287671232,
+      "precision": 0.8314606741573034,
+      "recall": 0.961038961038961,
+      "f1": 0.891566265060241,
+      "means": {
+        "total_ms": 333.54308287684256,
+        "extract_ms": 273.54715684935536,
+        "decision_ms": 59.99592602748722,
+        "full_yolo_ms": 21.85994383553282,
+        "crop_yolo_ms": 33.69439520566343,
+        "yolo_calls": 2.636986301369863
+      },
+      "fps": 2.998113441222944,
+      "p95_ms": 497.6712750030856,
+      "yolo_calls": 385,
+      "skipped_calls": 0,
+      "stage2_count": 24,
+      "fixed": [
+        "IMG_7537.jpg의 사본.jpg",
+        "IMG_7600.jpg의 사본.jpg",
+        "IMG_7746.jpg의 사본.jpg",
+        "IMG_7594.jpg의 사본.jpg",
+        "IMG_7589.jpg의 사본.jpg"
+      ],
+      "regressed": [
+        "IMG_7701.jpg의 사본.jpg",
+        "IMG_7586.jpg의 사본.jpg",
+        "IMG_7663.jpg의 사본.jpg",
+        "IMG_7514.jpg의 사본.jpg",
+        "IMG_7664.jpg의 사본.jpg",
+        "IMG_7735.jpg의 사본.jpg"
+      ]
+    },
+    "prune": {
+      "n": 146,
+      "tp": 72,
+      "tn": 57,
+      "fp": 12,
+      "fn": 5,
+      "accuracy": 0.8835616438356164,
+      "precision": 0.8571428571428571,
+      "recall": 0.935064935064935,
+      "f1": 0.8944099378881988,
+      "means": {
+        "total_ms": 384.7214205476893,
+        "extract_ms": 323.36327123286463,
+        "decision_ms": 61.358149314824686,
+        "full_yolo_ms": 74.59942808229044,
+        "crop_yolo_ms": 28.984015753836776,
+        "yolo_calls": 2.3698630136986303
+      },
+      "fps": 2.5992833946609997,
+      "p95_ms": 593.72702499968,
+      "yolo_calls": 346,
+      "skipped_calls": 43,
+      "stage2_count": 22,
+      "fixed": [],
+      "regressed": []
+    },
+    "640_prune": {
+      "n": 146,
+      "tp": 74,
+      "tn": 54,
+      "fp": 15,
+      "fn": 3,
+      "accuracy": 0.8767123287671232,
+      "precision": 0.8314606741573034,
+      "recall": 0.961038961038961,
+      "f1": 0.891566265060241,
+      "means": {
+        "total_ms": 330.7659239727487,
+        "extract_ms": 271.2228397253904,
+        "decision_ms": 59.54308424735831,
+        "full_yolo_ms": 21.50622328763472,
+        "crop_yolo_ms": 28.090250685237738,
+        "yolo_calls": 2.404109589041096
+      },
+      "fps": 3.023286038625879,
+      "p95_ms": 586.5175249964523,
+      "yolo_calls": 351,
+      "skipped_calls": 34,
+      "stage2_count": 24,
+      "fixed": [
+        "IMG_7537.jpg의 사본.jpg",
+        "IMG_7600.jpg의 사본.jpg",
+        "IMG_7746.jpg의 사본.jpg",
+        "IMG_7594.jpg의 사본.jpg",
+        "IMG_7589.jpg의 사본.jpg"
+      ],
+      "regressed": [
+        "IMG_7701.jpg의 사본.jpg",
+        "IMG_7586.jpg의 사본.jpg",
+        "IMG_7663.jpg의 사본.jpg",
+        "IMG_7514.jpg의 사본.jpg",
+        "IMG_7664.jpg의 사본.jpg",
+        "IMG_7735.jpg의 사본.jpg"
+      ]
+    }
+  },
+  "baseline_prediction_disagreements_with_verified": 0
+}
